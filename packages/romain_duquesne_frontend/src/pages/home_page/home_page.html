@@ -1,0 +1,88 @@
+<material-tab-panel class="tab-panel" [activeTabIndex]="0">
+    <material-tab label="ABOUT">
+        <div *deferredContent class="fullWidth">
+            <div>
+                <h1 class="textCenter">Full stack developer</h1>
+                <h2 class="textCenter">at Picardie-Informatique.</h2>
+            </div>
+            <hr>
+            <p>
+                Hello, I'm Romain Duquesne.</p>
+            <p>
+                Just another french developer.
+            </p>
+            <p>
+                I work mainly in the web domain with different tools such as Symfony or Angular.
+            </p>
+            <p>
+                And using different languages like PHP, Javascript, Dartlang or Golang.
+            </p>
+            <p>
+                I think that the web development is an area of the future.
+            </p>
+            <p>
+                But I also like software development, some languages ​​like C ++ are timeless.
+            </p>
+        </div>
+    </material-tab>
+    <material-tab label="BLOG">
+        <div *deferredContent class="fullWidth">
+            <p>
+                DUT Informatique - Amiens
+            </p>
+        </div>
+    </material-tab>
+    <material-tab label="PORTFOLIO">
+        <div *deferredContent class="fullWidth">
+            <material-expansionpanel-set>
+                <material-expansionpanel wide autoDismissable name="Project 1" secondaryText="Description, langages, etc..." saveText="More" cancelText="Close" (save)="openMore(1)">
+                    <div *deferredContent>
+                        Oh hi. I was just trying not to take too much space here.
+                    </div>
+                </material-expansionpanel>
+                <material-expansionpanel wide autoDismissable name="Project 2" secondaryText="Description, langages, etc..." saveText="More" cancelText="Close" (save)="openMore(1)">
+                    <div *deferredContent>
+                        Me too! Don't mind me.
+                    </div>
+                </material-expansionpanel>
+            </material-expansionpanel-set>
+        </div>
+    </material-tab>
+    <material-tab label="CV">
+        <div *deferredContent class="fullWidth">
+            <p>
+                DUT Informatique - Amiens
+            </p>
+        </div>
+    </material-tab>
+    <!--
+    <material-tab label="CONTACT">
+        <div *deferredContent>
+            <p>
+                DUT Informatique - Amiens
+            </p>
+        </div>
+    </material-tab>
+    <material-tab label="FORMATIONS">
+        <div *deferredContent>
+            <p>
+                DUT Informatique - Amiens
+            </p>
+        </div>
+    </material-tab>
+    <material-tab label="EXPERIENCES">
+        <div *deferredContent>
+            <p>
+                Conseil régional de Picardie - Amiens
+            </p>
+        </div>
+    </material-tab>
+    <material-tab label="SKILLS">
+        <div *deferredContent>
+            <p>
+                Conseil régional de Picardie - Amiens
+            </p>
+        </div>
+    </material-tab>
+-->
+</material-tab-panel>

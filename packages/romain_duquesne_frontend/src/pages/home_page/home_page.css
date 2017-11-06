@@ -1,0 +1,29 @@
+::ng-deep .tab-panel material-tab-strip.themeable .navi-bar .tab-button.active,
+::ng-deep .tab-panel material-tab-strip.themeable .navi-bar .tab-button.focus {
+  color: #47db63;
+}
+
+::ng-deep .tab-panel scrolling-material-tab-strip.themeable .navi-bar .tab-button.active,
+::ng-deep .tab-panel scrolling-material-tab-strip.themeable .navi-bar .tab-button.focus {
+  color: #47db63;
+}
+
+::ng-deep .tab-panel material-tab-strip.themeable .navi-bar .tab-indicator {
+  background: #47db63;
+}
+
+::ng-deep .tab-panel scrolling-material-tab-strip.themeable .navi-bar .tab-indicator {
+  background: #47db63;
+}
+
+material-tab-panel[centerStrip] ::ng-deep material-tab-strip {
+  width: 400px;
+}
+
+.fullWidth {
+  width: 100%;
+}
+
+.textCenter {
+  text-align: center;
+}

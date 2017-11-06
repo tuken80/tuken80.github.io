@@ -1,0 +1,76 @@
+<material-drawer temporary #drawerBegin="drawer">
+    <material-list *deferredContent>
+        <div group class="mat-drawer-spacer"></div>
+        <div group>
+            <material-list-item>
+                <material-icon icon="home"></material-icon>Home
+            </material-list-item>
+            <material-list-item>
+                <material-icon icon="done"></material-icon>Done
+            </material-list-item>
+            <material-list-item>
+                <material-icon icon="delete"></material-icon>Delete
+            </material-list-item>
+            <material-list-item>
+                <material-icon icon="lock"></material-icon>Lock
+            </material-list-item>
+        </div>
+        <div group>
+            <div label>Tags</div>
+            <material-list-item>
+                <material-icon icon="help"></material-icon>Help
+            </material-list-item>
+        </div>
+    </material-list>
+</material-drawer>
+<material-drawer temporary #drawerEnd="drawer" end="">
+    <material-list *deferredContent>
+        <div group class="mat-drawer-spacer"></div>
+        <div group>
+            <material-list-item>
+                <material-icon icon="home"></material-icon>Home
+            </material-list-item>
+            <material-list-item>
+                <material-icon icon="done"></material-icon>Done
+            </material-list-item>
+            <material-list-item>
+                <material-icon icon="delete"></material-icon>Delete
+            </material-list-item>
+            <material-list-item>
+                <material-icon icon="lock"></material-icon>Lock
+            </material-list-item>
+        </div>
+        <div group>
+            <div label>Tags</div>
+            <material-list-item>
+                <material-icon icon="help"></material-icon>Help
+            </material-list-item>
+        </div>
+    </material-list>
+</material-drawer>
+<material-content>
+    <header class="material-header shadow">
+        <div class="material-header-row">
+            <material-button class="material-drawer-button" icon (trigger)="drawerBegin.toggle()">
+                <material-icon icon="menu"></material-icon>
+            </material-button>
+            <span class="material-header-title">
+                <a href="http://romain-duquesne.com">Romain Duquesne</a>
+            </span>
+            <div class="material-spacer"></div>
+            <material-button icon>
+                <material-icon icon="send"></material-icon>
+            </material-button>
+            <material-button icon>
+                <material-icon icon="file_download"></material-icon>
+            </material-button>
+            <material-button icon>
+                <material-icon icon="bookmark"></material-icon>
+            </material-button>
+            <material-button class="material-drawer-button" icon (trigger)="drawerEnd.toggle()">
+                <material-icon icon="settings"></material-icon>
+            </material-button>
+        </div>
+    </header>
+    <router-outlet></router-outlet>
+</material-content>
