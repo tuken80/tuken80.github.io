@@ -1,0 +1,11 @@
+{
+  "watch": [
+    "src"
+  ],
+  "ext": "ts,json,env",
+  "ignore": [
+    "src/migrations",
+    "src/subscribers"
+  ],
+  "exec": "ts-node ./src/index.ts"
+}
